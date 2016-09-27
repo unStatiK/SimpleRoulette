@@ -31,9 +31,9 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QWidget" name="centralWidget">
+  <widget class="QWidget" name="mainWindow">
    <property name="styleSheet">
-    <string notr="true">background-color: black;</string>
+    <string notr="true"/>
    </property>
    <widget class="QPushButton" name="rollButton">
     <property name="geometry">
@@ -45,7 +45,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white;</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -67,7 +67,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: white;</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>

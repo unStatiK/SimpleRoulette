@@ -1,0 +1,19 @@
+QWidget#mainWindow  {
+		         background-color: #000000;
+                    }
+
+QLabel#rollValue   {
+                        color: #ffffff;
+                   }
+
+QPushButton#rollButton {
+                          border: 1px solid #ef9327;
+                          border-radius: 6px;
+                          background-color: #116a06;
+                          background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.67, stop: 0 #e5f2f7, stop: 1 #bbe4ef);
+                        }
+QPushButton#rollButton:pressed {
+                                    border: 1px solid #989898;
+                                    background-color: #222222;
+                                    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.67, stop: 0  #787878, stop: 1 #989898);
+                                }
