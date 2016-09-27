@@ -32,7 +32,7 @@ void SRWindow::fetchRolledValue()
 {
     QObject* sender = const_cast<QObject*>(QObject::sender());
     RouletteSourceStorage* rss = static_cast<RouletteSourceStorage*>(sender);
-    QPair<int, QString> rollPair = rss->ROLL_PAIR;
+    QPair<int, QString> rollPair = rss->getRolledValue();
     showRolledValue(rollPair.first, rollPair.second);
 }
 

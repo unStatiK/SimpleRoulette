@@ -12,12 +12,12 @@ class RouletteSourceStorage : public QObject
 public:
     explicit RouletteSourceStorage(QObject *parent = 0);
     void fillTextSourcesFromConfig(const QString filename);    
-
-    QPair<int, QString> ROLL_PAIR;
+    QPair<int, QString> getRolledValue();
 
 private:
     RandomAdapter ra;
     QSet<QString> TEXT_SOURCES;
+    QPair<int, QString> ROLL_PAIR;
     static const QString TEXT_LIST_CONFIG_KEY;
 
     QPair<int, QString> getNextRandomValue();

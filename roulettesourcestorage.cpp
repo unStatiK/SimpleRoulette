@@ -25,6 +25,11 @@ void RouletteSourceStorage::roll()
     rolled();
 }
 
+QPair<int, QString> RouletteSourceStorage::getRolledValue()
+{
+    return this->ROLL_PAIR;
+}
+
 QPair<int, QString> RouletteSourceStorage::getNextRandomValue()
 {
     QPair<int, QString> rollPair;
