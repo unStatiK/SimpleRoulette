@@ -23,7 +23,7 @@ private:
     QPair<int, QString> getNextRandomValue();
 
 signals:
-    void rolling();
+    void rolled();
 
 public slots:
     void roll();

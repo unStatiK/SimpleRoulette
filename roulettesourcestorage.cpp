@@ -22,7 +22,7 @@ void RouletteSourceStorage::fillTextSourcesFromConfig(const QString filename)
 void RouletteSourceStorage::roll()
 {    
     this->ROLL_PAIR = getNextRandomValue();
-    rolling();
+    rolled();
 }
 
 QPair<int, QString> RouletteSourceStorage::getNextRandomValue()

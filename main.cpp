@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     configureSRWindow(&srWindow);
 
     QObject::connect(&srWindow, SIGNAL(getRandomValue()), &rss, SLOT(roll()));
-    QObject::connect(&rss, SIGNAL(rolling()), &srWindow, SLOT(fetchRolledValue()));
+    QObject::connect(&rss, SIGNAL(rolled()), &srWindow, SLOT(fetchRolledValue()));
 
     showWindowAtCenter(&srWindow);
     return srApp.exec();
